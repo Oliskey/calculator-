@@ -1,0 +1,125 @@
+/* Common styles for all devices */
+body {
+  background-color: blue;
+}
+*{
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: black;
+  padding: 10px;
+  border-radius: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.result {
+  position: fixed;
+  right: 0%;
+  color: white;
+  font-size: 20vw;
+  font-family: cursive;
+}
+
+button {
+  font-size: 38px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  margin: 1vw 0.4vw;
+}
+
+.sign {
+  background-color: rgb(247, 169, 26);
+  color: white;
+}
+.sign:hover{
+  background-color: white; 
+  color: rgb(247, 169, 26);
+}
+
+/* .sign:active,
+.equals:active {
+  
+} */
+
+.AC {
+  background-color: rgb(138, 135, 135);
+  margin-left: 3px;
+}
+
+.AC:active {
+  background-color: rgb(228, 221, 221);
+}
+
+.numbers {
+  background-color: rgb(31, 30, 30);
+  color: white;
+}
+
+.numbers:active {
+  background-color: rgb(71, 70, 70);
+}
+
+.zero {
+  background-color: rgb(31, 30, 30);
+  color: white;
+  width: 50%;
+  border-radius: 50px;
+  margin: 0 0 0 3px;
+  padding-right: 75px;
+}
+
+.zero:active {
+  background-color: rgb(71, 70, 70);
+}
+
+.equals {
+  background-color: rgb(247, 169, 26);
+  color: white;
+  margin: 0 0 0 2px;
+}
+
+/* iPhone 6/7/8 */
+@media only screen and (max-width: 375px) {
+  body {
+    background-color: purple;
+  }
+
+  button {
+    height: 19.2vw;
+    width: 20%;
+    margin-bottom: 2%;
+    margin-right: 3vw;
+  }
+
+  .result {
+    margin: 30% 9.2vw 0;
+  }
+
+  .B_N {
+    margin-top: 58.5vw;
+  }
+}
+/* iPhone XR */
+@media only screen and (min-width: 376px) and (max-width: 414px) {
+  body {
+    background-color: greenyellow;
+  }
+
+  button {
+    height: 19.4vw;
+    width: 20%;
+    margin-bottom: 2%;
+    margin-right: 3.2vw;
+  }
+
+  .result {
+    margin: 50% 11% 0;
+  }
+
+  .B_N {
+    margin-top: 10.4cm;  /* Adjust the margin-top as needed */
+  }
+}
+
